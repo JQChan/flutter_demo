@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:english_words/english_words.dart';
+import 'package:english_words/english_words.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,7 +8,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // final wordPair = WordPair.random();
+    final wordPair = WordPair.random();
     return MaterialApp(
       title: '欢迎来到Flutter',
       home: Scaffold(
@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
           title: Text('欢迎来到Flutter呀!'),
         ),
         body: Center(
-          child: const Text('Hello world'),
-          // child: Text(wordPair.asPascalCase),
+          // child: const Text('Hello world'),
+          child: Text(wordPair.asPascalCase),
         ),
       ),
     );
